@@ -39,24 +39,19 @@
 </div>
 
 @section Scripts {
-    <script type="text/javascript">
-        function previewImage() {
-            var file = document.getElementById("Img").files[0];
-            console.log(file); 
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        document.getElementById('Img').addEventListener('change', function(event) {
+            const file = event.target.files[0];
             if (file) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    var preview = document.getElementById("preview");
-                    preview.src = e.target.result;
-                    preview.style.display = "block";
-                    console.log(e.target.result); 
-                }
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const previewImg = document.getElementById('previewImg');
+                    previewImg.src = e.target.result;
+                    previewImg.style.display = 'block';
+                };
                 reader.readAsDataURL(file);
-            } else {
-                var preview = document.getElementById("preview");
-                preview.src = "#";
-                preview.style.display = "none";
             }
-        }
+        });
     </script>
 }

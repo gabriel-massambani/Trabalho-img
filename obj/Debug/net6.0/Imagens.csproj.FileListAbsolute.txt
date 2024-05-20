@@ -792,3 +792,4 @@ C:\Users\Usuario\Desktop\Imagem.Net-main\obj\Debug\net6.0\refint\Imagens.dll
 C:\Users\Usuario\Desktop\Imagem.Net-main\obj\Debug\net6.0\Imagens.pdb
 C:\Users\Usuario\Desktop\Imagem.Net-main\obj\Debug\net6.0\Imagens.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Imagem.Net-main\obj\Debug\net6.0\ref\Imagens.dll
+C:\Users\Usuario\Desktop\Imagem.Net-main\obj\Debug\net6.0\Imagens.sourcelink.json
